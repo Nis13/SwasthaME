@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script src="bmi2.js"></script>
+    <link rel="stylesheet" href="bim2.css"> -->
+    <style>
+        /* body{
+            background-color: rgb(31, 123, 51);
+        } */
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        border-color: white;
+      }
+      input[type="text"] {
+        width: 60%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+      button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: rgb(31, 123, 51);
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-color: white;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 18px;
+        color: green;
+      }
+      h2{
+        color: rgb(31, 123, 51);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>BMI Calculator</h2>
+      <label for="age">Age:</label>
+      <input type="text" id="age" />
+      <br />
+      <label for="weight">Weight (kg):</label>
+      <input type="text" id="weight" />
+      <br />
+      <label for="height">Height (m):</label>
+      <input type="text" id="height" />
+      <br />
+      <button id="calculateBtn">Calculate BMI</button>
+      <p id="result"></p>
+      <a href="/Survey/bmi.html"> <button>Next</button></a>
+    </div>
+
+    <script>
+      document.getElementById("calculateBtn").addEventListener("click", function() {
+        let age = parseInt(document.getElementById("age").value);
+        let weight = parseFloat(document.getElementById("weight").value);
+        let height = parseFloat(document.getElementById("height").value);
+  
+        let bmi = weight / (height * height);
+        let result = "";
+  
+        if (bmi < 18.5) {
+          result = "Underweight";
+        } else if (bmi >= 18.5 && bmi < 25) {
+          result = "Normal weight";
+        } else if (bmi >= 25 && bmi < 30) {
+          result = "Overweight";
+        } else {
+          result = "Obesity";
+        }
+  
+        document.getElementById("result").innerHTML = "BMI: " + bmi + "<br />" + result;
+      });
+    </script>
+  

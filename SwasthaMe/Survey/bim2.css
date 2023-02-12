@@ -1,0 +1,70 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+body{
+    background-color: rgb(31, 123, 51);
+}
+.card1 {
+    margin: auto;
+    margin-top: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    padding: 16px 24px;
+    border-color:rgb(31, 123, 51) ;
+    border-radius: 8px;
+    /* text-align-last: center; */
+    
+/* }
+.form-control{
+    padding-top:5px !important;
+    padding-bottom: 5px !important;
+    width: 30%!important;
+    display: block;
+    
+}
+.form-contact>h1{
+    /* text-align: center; */
+    /* padding: 100px
+}
+a{
+    color:black;
+    
+/* } */ 
+
+/* body{
+    background-color: rgb(31, 123, 51);
+} */
+/* .container {
+width: 400px;
+margin: 0 auto;
+text-align: center;
+border-color: white;
+}
+input[type="text"] {
+width: 60%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 1px solid gray;
+}
+button {
+padding: 10px 20px;
+border-radius: 5px;
+background-color: rgb(31, 123, 51);
+color: white;
+border: none;
+cursor: pointer;
+border-color: white;
+}
+p {
+margin-top: 20px;
+font-size: 18px;
+color: green;
+} */
